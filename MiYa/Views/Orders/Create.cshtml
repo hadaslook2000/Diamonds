@@ -1,0 +1,142 @@
+﻿@model MiYa.Models.Orders
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>@ViewBag.Company @*Create*@</h2>
+@section scripts{
+    <script src="~/Scripts/CaculatedField.js"></script>
+
+    <script src="~/Scripts/passData.js"></script>
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Orders</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Shape, "Shape", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Shape", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Shape, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Color, "Color", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Color", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Clarity, "Clarity", htmlAttributes: new { @class = "control-label col-md-2 selectpicker" })
+            <div class="col-md-10">
+                @Html.DropDownList("Clarity", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Clarity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cut, "Cut", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Cut", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Cut, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Type</label>
+            <div class="col-md-10">
+                @Html.DropDownList("Kind", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Kind, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RapScale_CtStone_Sizemm, "RapScale_CtStone_Sizemm", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("RapScale_CtStone_Sizemm", null, htmlAttributes: new { @class = "form-control rapscale" })
+                @Html.ValidationMessageFor(model => model.RapScale_CtStone_Sizemm, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.carat, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input id="Carat" class="form-control carat" disabled="disabled" />
+                @*@Html.EditorFor(model => model.carat, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.carat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input id="Quantity" class="form-control quantity" />
+                @*@Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.Quantity, "Quantity is required", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TotalCt, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input id="TotalCt" class="form-control total" disabled="disabled"/>
+                @*@Html.EditorFor(model => model.TotalCt, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model =>model.TotalCt, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Note, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Note, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Note, "", new { @class = "text-danger textarea" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add to my list" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+}
+
+<script>
+    var scale = document.getElementsByClassName('rapscale')[0],
+      carat = document.getElementsByClassName('carat')[0],
+      quantity = document.getElementsByClassName('quantity')[0],
+      total = document.getElementsByClassName('total')[0];
+
+    scale.onchange = function (event) {
+        var text = scale.selectedOptions[0].text;
+        var parts = text.replace(/ct/g, '').split(' - ')
+        carat.value = parseFloat(parts[1] ? parts[1] : parts[0].split('-')[1]).toFixed(3).toString();
+        var quant = parseInt(quantity.value),
+            _carat = parseFloat(carat.value);
+        total.value = (quant * _carat).toFixed(3).toString();
+    }
+
+    quantity.onchange = function () {
+        var quant = parseInt(quantity.value),
+            _carat = parseFloat(carat.value);
+        total.value = (quant * _carat).toFixed(3);
+    }
+
+    var text = scale.selectedOptions[0].text;
+    carat.value = (text.replace(/ct/g, '').split(' - ')[1]);
+</script>
+
+<div>
+    @Html.ActionLink("Go to List", "Index", "Orders")
+</div>
+

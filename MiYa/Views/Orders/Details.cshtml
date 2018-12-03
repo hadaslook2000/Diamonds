@@ -1,0 +1,107 @@
+﻿@model MiYa.Models.Orders
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<h2>@ViewBag.Company </h2>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalCt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOrder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clarities.Clarity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clarities.Clarity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colors.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colors.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuts.Cut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cuts.Cut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kinds.Kind)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kinds.Kind)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RapScale_CtStone_Sizemms.RapScale_CtStone_Sizemm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RapScale_CtStone_Sizemms.RapScale_CtStone_Sizemm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shapes.Shape)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shapes.Shape)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

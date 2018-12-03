@@ -1,0 +1,276 @@
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\csc.exe
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\System.Collections.Immutable.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\System.Reflection.Metadata.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\vbc.exe
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\VBCSCompiler.exe
+C:\הדס אבא שאול כיתה יד\MiYa\bin\roslyn\VBCSCompiler.exe.config
+C:\הדס אבא שאול כיתה יד\MiYa\bin\MiYa.dll.config
+C:\הדס אבא שאול כיתה יד\MiYa\bin\MiYa.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\MiYa.pdb
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Antlr3.Runtime.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\EntityFramework.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\EntityFramework.SqlServer.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.AspNet.Identity.Core.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Cookies.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Facebook.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Google.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.OAuth.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Twitter.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Web.Infrastructure.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Newtonsoft.Json.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Owin.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Helpers.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Mvc.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Optimization.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Razor.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.WebPages.Deployment.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.WebPages.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.WebPages.Razor.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\WebGrease.dll
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Helpers.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Mvc.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Optimization.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.Razor.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.WebPages.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.WebPages.Deployment.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\System.Web.WebPages.Razor.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Antlr3.Runtime.pdb
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Newtonsoft.Json.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\EntityFramework.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\EntityFramework.SqlServer.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.AspNet.Identity.Core.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Facebook.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Cookies.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.OAuth.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Google.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.Twitter.xml
+C:\הדס אבא שאול כיתה יד\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\הדס אבא שאול כיתה יד\MiYa\obj\Debug\MiYa.csprojResolveAssemblyReference.cache
+C:\הדס אבא שאול כיתה יד\MiYa\obj\Debug\MiYa.dll
+C:\הדס אבא שאול כיתה יד\MiYa\obj\Debug\MiYa.pdb
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\obj\Debug\MiYa.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\obj\Debug\MiYa.pdb
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\csc.exe
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\System.Collections.Immutable.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\System.Reflection.Metadata.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\vbc.exe
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\VBCSCompiler.exe
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\roslyn\VBCSCompiler.exe.config
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\MiYa.dll.config
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\MiYa.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\MiYa.pdb
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Antlr3.Runtime.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\EntityFramework.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\EntityFramework.SqlServer.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.AspNet.Identity.Core.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Cookies.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Facebook.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Google.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.OAuth.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Twitter.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Web.Infrastructure.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Newtonsoft.Json.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Owin.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Helpers.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Mvc.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Optimization.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Razor.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.WebPages.Deployment.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.WebPages.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.WebPages.Razor.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\WebGrease.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Helpers.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Mvc.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Optimization.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.Razor.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.WebPages.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.WebPages.Deployment.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\System.Web.WebPages.Razor.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Antlr3.Runtime.pdb
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Newtonsoft.Json.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\EntityFramework.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\EntityFramework.SqlServer.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.AspNet.Identity.Core.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Facebook.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Cookies.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.OAuth.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Google.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.Twitter.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\MiYa\obj\Debug\MiYa.csprojResolveAssemblyReference.cache
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\csc.exe
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\System.Collections.Immutable.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\System.Reflection.Metadata.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\vbc.exe
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\VBCSCompiler.exe
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\roslyn\VBCSCompiler.exe.config
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\MiYa.dll.config
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\MiYa.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\MiYa.pdb
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Antlr3.Runtime.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\EntityFramework.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\EntityFramework.SqlServer.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Core.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Cookies.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Facebook.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Google.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.OAuth.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Twitter.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Web.Infrastructure.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Newtonsoft.Json.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Owin.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Helpers.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Mvc.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Optimization.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Razor.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.WebPages.Deployment.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.WebPages.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.WebPages.Razor.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\WebGrease.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Helpers.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Mvc.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Optimization.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.Razor.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.WebPages.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.WebPages.Deployment.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\System.Web.WebPages.Razor.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Antlr3.Runtime.pdb
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Newtonsoft.Json.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\EntityFramework.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\EntityFramework.SqlServer.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Core.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Facebook.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Cookies.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.OAuth.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Google.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Twitter.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\obj\Debug\MiYa.csprojResolveAssemblyReference.cache
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\obj\Debug\MiYa.dll
+C:\הדס אבא שאול כיתה יד\Diamonds\Project\MiYa\obj\Debug\MiYa.pdb
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\csc.exe
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\System.Collections.Immutable.dll
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\System.Reflection.Metadata.dll
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\vbc.exe
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\VBCSCompiler.exe
+C:\hadas\Diamonds\Project\MiYa\bin\roslyn\VBCSCompiler.exe.config
+C:\hadas\Diamonds\Project\MiYa\bin\MiYa.dll.config
+C:\hadas\Diamonds\Project\MiYa\bin\MiYa.dll
+C:\hadas\Diamonds\Project\MiYa\bin\MiYa.pdb
+C:\hadas\Diamonds\Project\MiYa\bin\Antlr3.Runtime.dll
+C:\hadas\Diamonds\Project\MiYa\bin\EntityFramework.dll
+C:\hadas\Diamonds\Project\MiYa\bin\EntityFramework.SqlServer.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Core.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Cookies.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Facebook.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Google.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.OAuth.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Twitter.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Web.Infrastructure.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Newtonsoft.Json.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Owin.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Helpers.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Mvc.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Optimization.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Razor.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.WebPages.Deployment.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.WebPages.dll
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.WebPages.Razor.dll
+C:\hadas\Diamonds\Project\MiYa\bin\WebGrease.dll
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Helpers.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Mvc.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Optimization.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.Razor.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.WebPages.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.WebPages.Deployment.xml
+C:\hadas\Diamonds\Project\MiYa\bin\System.Web.WebPages.Razor.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Antlr3.Runtime.pdb
+C:\hadas\Diamonds\Project\MiYa\bin\Newtonsoft.Json.xml
+C:\hadas\Diamonds\Project\MiYa\bin\EntityFramework.xml
+C:\hadas\Diamonds\Project\MiYa\bin\EntityFramework.SqlServer.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Core.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Facebook.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Cookies.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.OAuth.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Google.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.Twitter.xml
+C:\hadas\Diamonds\Project\MiYa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\hadas\Diamonds\Project\MiYa\obj\Debug\MiYa.csprojResolveAssemblyReference.cache
+C:\hadas\Diamonds\Project\MiYa\obj\Debug\MiYa.dll
+C:\hadas\Diamonds\Project\MiYa\obj\Debug\MiYa.pdb

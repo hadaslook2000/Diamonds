@@ -1,0 +1,113 @@
+﻿@model IEnumerable<MiYa.Models.Orders>
+@section scripts{
+<script src="~/Scripts/passData.js"></script>
+    }
+<table class="table">
+    <tr>
+        <th>
+            Num rfq
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Companies.Company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOrder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.carat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Clarities.Clarity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Colors.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cuts.Cut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kinds.Kind)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RapScale_CtStone_Sizemms.RapScale_CtStone_Sizemm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shapes.Shape)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalCt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Companies.Company)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.carat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clarities.Clarity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Colors.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cuts.Cut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kinds.Kind)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RapScale_CtStone_Sizemms.RapScale_CtStone_Sizemm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shapes.Shape)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.EditorFor(modelItem => item.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(modelItem => item.Price, "", new { @class = "text-danger" })
+            </td>
+            <td>
+                <div class="actionLinkClass1 card-container1" style="padding-left:0vw">
+                    <img class="img-send" src="~/Images/sendicon.png" />
+                    @*<input @*class="buttonToKindOfLink" type="submit" value="Send"/>*@
+                    @Html.ActionLink("Send", "MyRfqDetails11", new { id = item.CompanyId, qua = item.Quantity })
+                </div>
+                <div class="actionLinkClass1 card-container1" style="padding-left:2vw">
+                    <img class="img-trash" src="~/Images/icons1.png" />
+                    @Html.ActionLink("Delete", "Delete", new { id = item.OrderId })
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+

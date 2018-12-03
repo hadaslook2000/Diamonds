@@ -1,0 +1,230 @@
+﻿@model IEnumerable<MiYa.Models.Orders>
+
+@*<script src="~/Scripts/JavaScriptAddButton.js"></script>*@
+
+@*<script src="~/Scripts/vanillatree.js"></script>
+    @*<link href ="vanillatree.css"  rel="stylesheet">*@
+@*<script src="~/ScriptsAjax/jquery-1.7.1.intellisense.js"></script>*@
+
+@section scripts{
+    <script src="~/Scripts/passData.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="~/ScriptsAjax/jquery-1.7.1.js"></script>
+<script src="~/ScriptsAjax/jquery-1.7.1.min.js"></script>
+<script src="~/ScriptsAjax/jquery.unobtrusive-ajax.js"></script>
+<script src="~/ScriptsAjax/jquery.unobtrusive-ajax.min.js"></script>
+<script src="~/Scripts/passData1.js"></script>
+}
+<h2>@ViewBag.Company </h2>
+
+<div class="card-container2 actionLinkClass3 " style="padding-left:2.4vw; cursor:pointer;width: 20vw; min-width: 226px;
+">
+    @*<div class="form-group  ">
+        @Html.LabelFor(model => model, "Classification", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Classification", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Classification, "", new { @class = "text-danger" })
+        </div>
+    </div>*@
+
+
+    @Ajax.ActionLink("Waiting for your approval", "WaitingToYourApproval",
+           new AjaxOptions()
+           {
+               //שיטת הגישה לשרת
+               HttpMethod = "get",
+               //שם הדיב בו יוצגו הנתונים שיחזרו מהשרת
+               UpdateTargetId = "divDetails",
+               LoadingElementId = "divImgLoading",
+               //האם הנתונים יתווספו או יוחלפו
+               InsertionMode = InsertionMode.Replace,
+               //פונ' צד לקוח שתתבצע בתחילת הפניה לשרת
+               OnBegin = "hiddenDetails()",
+               //פונ' צד לקוח שתתבצע בסיום הפניה לשרת
+               OnComplete = "visibleDetails()",
+           })
+
+    <img class="img-project" src="~/Images/007-vote-1.png" />
+</div>
+
+
+@*<div class="card-container2 actionLinkClass3 " style="padding-left:2.4vw; cursor:pointer;min-width: 296px;">
+        @Ajax.ActionLink("Waiting for administrator approval", "WaitingForAdministrator",
+               new AjaxOptions()
+               {
+                   //שיטת הגישה לשרת
+                   HttpMethod = "get",
+                   //שם הדיב בו יוצגו הנתונים שיחזרו מהשרת
+                   UpdateTargetId = "divDetails",
+                   LoadingElementId = "divImgLoading",
+                   //האם הנתונים יתווספו או יוחלפו
+                   InsertionMode = InsertionMode.Replace,
+                   //פונ' צד לקוח שתתבצע בתחילת הפניה לשרת
+                   OnBegin = "hiddenDetails()",
+                   //פונ' צד לקוח שתתבצע בסיום הפניה לשרת
+                   OnComplete = "visibleDetails()",
+               })
+
+        <img class="img-project" src="~/Images/014-shopping-list.png" />
+    </div>
+
+    <div class="card-container2 actionLinkClass3 " style="padding-left:2.4vw; cursor:pointer;    min-width: 223px">
+        @Ajax.ActionLink("Confirm your purchase", "ConfirmYourPurchase",
+               new AjaxOptions()
+               {
+                   //שיטת הגישה לשרת
+                   HttpMethod = "get",
+                   //שם הדיב בו יוצגו הנתונים שיחזרו מהשרת
+                   UpdateTargetId = "divDetails",
+                   LoadingElementId = "divImgLoading",
+                   //האם הנתונים יתווספו או יוחלפו
+                   InsertionMode = InsertionMode.Replace,
+                   //פונ' צד לקוח שתתבצע בתחילת הפניה לשרת
+                   OnBegin = "hiddenDetails()",
+                   //פונ' צד לקוח שתתבצע בסיום הפניה לשרת
+                   OnComplete = "visibleDetails()",
+               })
+
+        <img class="img-project" src="~/Images/007-vote-1.png" />
+    </div>
+
+    <div class="card-container2 actionLinkClass3 " style="padding-left:2.4vw; cursor:pointer;min-width: 212px;">
+        @Ajax.ActionLink("Approved purchase", "ApprovedPurchases",
+               new AjaxOptions()
+               {
+                   //שיטת הגישה לשרת
+                   HttpMethod = "get",
+                   //שם הדיב בו יוצגו הנתונים שיחזרו מהשרת
+                   UpdateTargetId = "divDetails",
+                   LoadingElementId = "divImgLoading",
+                   //האם הנתונים יתווספו או יוחלפו
+                   InsertionMode = InsertionMode.Replace,
+                   //פונ' צד לקוח שתתבצע בתחילת הפניה לשרת
+                   OnBegin = "hiddenDetails()",
+                   //פונ' צד לקוח שתתבצע בסיום הפניה לשרת
+                   OnComplete = "visibleDetails()",
+               })
+        <img class="img-project" src="~/Images/009-agreement.png" />
+    </div>*@
+
+
+
+@*@Ajax.ActionLink("Details", "MyRfqDetails",
+    new AjaxOptions()
+    {
+        //שיטת הגישה לשרת
+        HttpMethod = "get",
+        //שם הדיב בו יוצגו הנתונים שיחזרו מהשרת
+        UpdateTargetId = "divDetails",
+        LoadingElementId = "divImgLoading",
+        //האם הנתונים יתווספו או יוחלפו
+        InsertionMode = InsertionMode.Replace,
+        //פונ' צד לקוח שתתבצע בתחילת הפניה לשרת
+        OnBegin = "hiddenDetails()",
+        //פונ' צד לקוח שתתבצע בסיום הפניה לשרת
+        OnComplete = "visibleDetails()",
+    })*@
+
+
+
+
+
+<div class="text-center" id="divImgLoading" style="float: right;
+    padding-top: 100px;
+    padding-right: 421px;
+    display:none;
+    width: 67%;
+    ">
+    <img src="~/ScriptsAjax/download (2).gif" />
+</div>
+<div id="divDetails"></div>
+
+
+<script>
+
+    function hiddenDetails() {
+        divDetails.style.visibility = "hidden";
+    }
+
+    function visibleDetails() {
+        divDetails.style.visibility = "visible";
+    }
+
+</script>
+
+<div id="google_translate_element"></div>
+
+
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+@*<table class="table">
+        <tr>
+            <th>Details</th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RfqId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+                {
+            <tr>
+                <td id="">
+                    @Ajax.ActionLink("Details", "Details2", new { id = item.OrderId },
+               new AjaxOptions()
+               {
+                   //שיטת הגישה לשרת
+                   HttpMethod = "get",
+                   //שם הדיב בו יוצגו הנתונים שיחזרו מהשרת
+                   UpdateTargetId = "divDetails",
+                   LoadingElementId = "divImgLoading",
+                   //האם הנתונים יתווספו או יוחלפו
+                   InsertionMode = InsertionMode.Replace,
+                   //פונ' צד לקוח שתתבצע בתחילת הפניה לשרת
+                   OnBegin = "hiddenDetails()",
+                   //פונ' צד לקוח שתתבצע בסיום הפניה לשרת
+                   OnComplete = "visibleDetails()",
+               })
+
+                    <main>
+                    </main>
+
+                </td>
+
+
+                <th>
+                    @Html.DisplayFor(modelItem => item.CompanyId)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RfqId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @@Html.ActionLink("Delete", "Delete", new { id = item.OrderId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.OrderId, rfqId = item.RfqId })
+                </td>
+            </tr>
+        }
+    </table>*@

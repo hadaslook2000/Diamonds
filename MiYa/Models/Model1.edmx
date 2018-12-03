@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MiYaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clarities">
+          <Key>
+            <PropertyRef Name="ClarityId" />
+          </Key>
+          <Property Name="ClarityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Clarity" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Classifications">
+          <Key>
+            <PropertyRef Name="ClassificationId" />
+          </Key>
+          <Property Name="ClassificationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Classification" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Colors">
+          <Key>
+            <PropertyRef Name="ColorId" />
+          </Key>
+          <Property Name="ColorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Color" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Companies">
+          <Key>
+            <PropertyRef Name="CompanyId" />
+          </Key>
+          <Property Name="CompanyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Company" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Classification" Type="int" Nullable="false" />
+          <Property Name="ContactPerson" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Prefix" Type="int" Nullable="false" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Country" Type="int" Nullable="false" />
+          <Property Name="DateRegistration" Type="datetime" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsInterested" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Cuts">
+          <Key>
+            <PropertyRef Name="CutId" />
+          </Key>
+          <Property Name="CutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cut" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kinds">
+          <Key>
+            <PropertyRef Name="KindId" />
+          </Key>
+          <Property Name="KindId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kind" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyId" Type="int" />
+          <Property Name="Shape" Type="int" Nullable="false" />
+          <Property Name="Color" Type="int" Nullable="false" />
+          <Property Name="Clarity" Type="int" Nullable="false" />
+          <Property Name="Cut" Type="int" Nullable="false" />
+          <Property Name="Kind" Type="int" Nullable="false" />
+          <Property Name="RapScale_CtStone_Sizemm" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="TotalCt" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="DateOrder" Type="datetime" Nullable="false" />
+          <Property Name="Note" Type="nvarchar" MaxLength="200" />
+          <Property Name="carat" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="Price" Type="numeric" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Prefixes">
+          <Key>
+            <PropertyRef Name="PrefixId" />
+          </Key>
+          <Property Name="PrefixId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Prefix" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RapScale_CtStone_Sizemms">
+          <Key>
+            <PropertyRef Name="RapScale_CtStone_SizemmId" />
+          </Key>
+          <Property Name="RapScale_CtStone_SizemmId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RapScale_CtStone_Sizemm" Type="nvarchar" MaxLength="450" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shapes">
+          <Key>
+            <PropertyRef Name="ShapeId" />
+          </Key>
+          <Property Name="ShapeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Shape" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_Companies_Classifications">
+          <End Role="Classifications" Type="Self.Classifications" Multiplicity="1" />
+          <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Classifications">
+              <PropertyRef Name="ClassificationId" />
+            </Principal>
+            <Dependent Role="Companies">
+              <PropertyRef Name="Classification" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Companies_Countries">
+          <End Role="Countries" Type="Self.Countries" Multiplicity="1" />
+          <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="Companies">
+              <PropertyRef Name="Country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Companies_Prefixes">
+          <End Role="Prefixes" Type="Self.Prefixes" Multiplicity="1" />
+          <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Prefixes">
+              <PropertyRef Name="PrefixId" />
+            </Principal>
+            <Dependent Role="Companies">
+              <PropertyRef Name="Prefix" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Clarities">
+          <End Role="Clarities" Type="Self.Clarities" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clarities">
+              <PropertyRef Name="ClarityId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Clarity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Colors">
+          <End Role="Colors" Type="Self.Colors" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Colors">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Color" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Companies">
+          <End Role="Companies" Type="Self.Companies" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Companies">
+              <PropertyRef Name="CompanyId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Cuts">
+          <End Role="Cuts" Type="Self.Cuts" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuts">
+              <PropertyRef Name="CutId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Cut" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Kinds">
+          <End Role="Kinds" Type="Self.Kinds" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kinds">
+              <PropertyRef Name="KindId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Kind" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_RapScale_CtStone_Sizemms">
+          <End Role="RapScale_CtStone_Sizemms" Type="Self.RapScale_CtStone_Sizemms" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RapScale_CtStone_Sizemms">
+              <PropertyRef Name="RapScale_CtStone_SizemmId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="RapScale_CtStone_Sizemm" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Shapes">
+          <End Role="Shapes" Type="Self.Shapes" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shapes">
+              <PropertyRef Name="ShapeId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Shape" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MiYaModelStoreContainer">
+          <EntitySet Name="Clarities" EntityType="Self.Clarities" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Classifications" EntityType="Self.Classifications" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Colors" EntityType="Self.Colors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cuts" EntityType="Self.Cuts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kinds" EntityType="Self.Kinds" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Prefixes" EntityType="Self.Prefixes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RapScale_CtStone_Sizemms" EntityType="Self.RapScale_CtStone_Sizemms" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Shapes" EntityType="Self.Shapes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Companies_Classifications" Association="Self.FK_Companies_Classifications">
+            <End Role="Classifications" EntitySet="Classifications" />
+            <End Role="Companies" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Companies_Countries" Association="Self.FK_Companies_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Companies" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Companies_Prefixes" Association="Self.FK_Companies_Prefixes">
+            <End Role="Prefixes" EntitySet="Prefixes" />
+            <End Role="Companies" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Clarities" Association="Self.FK_Orders_Clarities">
+            <End Role="Clarities" EntitySet="Clarities" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Colors" Association="Self.FK_Orders_Colors">
+            <End Role="Colors" EntitySet="Colors" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Companies" Association="Self.FK_Orders_Companies">
+            <End Role="Companies" EntitySet="Companies" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Cuts" Association="Self.FK_Orders_Cuts">
+            <End Role="Cuts" EntitySet="Cuts" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Kinds" Association="Self.FK_Orders_Kinds">
+            <End Role="Kinds" EntitySet="Kinds" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_RapScale_CtStone_Sizemms" Association="Self.FK_Orders_RapScale_CtStone_Sizemms">
+            <End Role="RapScale_CtStone_Sizemms" EntitySet="RapScale_CtStone_Sizemms" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Shapes" Association="Self.FK_Orders_Shapes">
+            <End Role="Shapes" EntitySet="Shapes" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MiYaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clarities">
+          <Key>
+            <PropertyRef Name="ClarityId" />
+          </Key>
+          <Property Name="ClarityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Clarity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Clarities" FromRole="Clarities" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Classifications">
+          <Key>
+            <PropertyRef Name="ClassificationId" />
+          </Key>
+          <Property Name="ClassificationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Classification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Companies" Relationship="Self.FK_Companies_Classifications" FromRole="Classifications" ToRole="Companies" />
+        </EntityType>
+        <EntityType Name="Colors">
+          <Key>
+            <PropertyRef Name="ColorId" />
+          </Key>
+          <Property Name="ColorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Colors" FromRole="Colors" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Companies">
+          <Key>
+            <PropertyRef Name="CompanyId" />
+          </Key>
+          <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Classification" Type="Int32" Nullable="false" />
+          <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Prefix" Type="Int32" Nullable="false" />
+          <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Country" Type="Int32" Nullable="false" />
+          <Property Name="DateRegistration" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsInterested" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Classifications" Relationship="Self.FK_Companies_Classifications" FromRole="Companies" ToRole="Classifications" />
+          <NavigationProperty Name="Countries" Relationship="Self.FK_Companies_Countries" FromRole="Companies" ToRole="Countries" />
+          <NavigationProperty Name="Prefixes" Relationship="Self.FK_Companies_Prefixes" FromRole="Companies" ToRole="Prefixes" />
+          <NavigationProperty Name="Orders" Relationship="MiYaModel.FK_Orders_Companies" FromRole="Companies" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Companies" Relationship="Self.FK_Companies_Countries" FromRole="Countries" ToRole="Companies" />
+        </EntityType>
+        <EntityType Name="Cuts">
+          <Key>
+            <PropertyRef Name="CutId" />
+          </Key>
+          <Property Name="CutId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cut" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Cuts" FromRole="Cuts" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Kinds">
+          <Key>
+            <PropertyRef Name="KindId" />
+          </Key>
+          <Property Name="KindId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kind" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Kinds" FromRole="Kinds" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shape" Type="Int32" Nullable="false" />
+          <Property Name="Color" Type="Int32" Nullable="false" />
+          <Property Name="Clarity" Type="Int32" Nullable="false" />
+          <Property Name="Cut" Type="Int32" Nullable="false" />
+          <Property Name="Kind" Type="Int32" Nullable="false" />
+          <Property Name="RapScale_CtStone_Sizemm" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="TotalCt" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="DateOrder" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Clarities" Relationship="Self.FK_Orders_Clarities" FromRole="Orders" ToRole="Clarities" />
+          <NavigationProperty Name="Colors" Relationship="Self.FK_Orders_Colors" FromRole="Orders" ToRole="Colors" />
+          <NavigationProperty Name="Cuts" Relationship="Self.FK_Orders_Cuts" FromRole="Orders" ToRole="Cuts" />
+          <NavigationProperty Name="Kinds" Relationship="Self.FK_Orders_Kinds" FromRole="Orders" ToRole="Kinds" />
+          <NavigationProperty Name="RapScale_CtStone_Sizemms" Relationship="Self.FK_Orders_RapScale_CtStone_Sizemms" FromRole="Orders" ToRole="RapScale_CtStone_Sizemms" />
+          <NavigationProperty Name="Shapes" Relationship="Self.FK_Orders_Shapes" FromRole="Orders" ToRole="Shapes" />
+          <Property Name="CompanyId" Type="Int32" />
+          <NavigationProperty Name="Companies" Relationship="MiYaModel.FK_Orders_Companies" FromRole="Orders" ToRole="Companies" />
+          <Property Name="carat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Prefixes">
+          <Key>
+            <PropertyRef Name="PrefixId" />
+          </Key>
+          <Property Name="PrefixId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Prefix" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Companies" Relationship="Self.FK_Companies_Prefixes" FromRole="Prefixes" ToRole="Companies" />
+        </EntityType>
+        <EntityType Name="RapScale_CtStone_Sizemms">
+          <Key>
+            <PropertyRef Name="RapScale_CtStone_SizemmId" />
+          </Key>
+          <Property Name="RapScale_CtStone_SizemmId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RapScale_CtStone_Sizemm" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_RapScale_CtStone_Sizemms" FromRole="RapScale_CtStone_Sizemms" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Shapes">
+          <Key>
+            <PropertyRef Name="ShapeId" />
+          </Key>
+          <Property Name="ShapeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Shape" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Shapes" FromRole="Shapes" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_Orders_Clarities">
+          <End Role="Clarities" Type="Self.Clarities" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clarities">
+              <PropertyRef Name="ClarityId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Clarity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Companies_Classifications">
+          <End Role="Classifications" Type="Self.Classifications" Multiplicity="1" />
+          <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Classifications">
+              <PropertyRef Name="ClassificationId" />
+            </Principal>
+            <Dependent Role="Companies">
+              <PropertyRef Name="Classification" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Colors">
+          <End Role="Colors" Type="Self.Colors" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Colors">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Color" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Companies_Countries">
+          <End Role="Countries" Type="Self.Countries" Multiplicity="1" />
+          <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="Companies">
+              <PropertyRef Name="Country" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Companies_Prefixes">
+          <End Role="Prefixes" Type="Self.Prefixes" Multiplicity="1" />
+          <End Role="Companies" Type="Self.Companies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Prefixes">
+              <PropertyRef Name="PrefixId" />
+            </Principal>
+            <Dependent Role="Companies">
+              <PropertyRef Name="Prefix" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Cuts">
+          <End Role="Cuts" Type="Self.Cuts" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuts">
+              <PropertyRef Name="CutId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Cut" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Kinds">
+          <End Role="Kinds" Type="Self.Kinds" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kinds">
+              <PropertyRef Name="KindId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Kind" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_RapScale_CtStone_Sizemms">
+          <End Role="RapScale_CtStone_Sizemms" Type="Self.RapScale_CtStone_Sizemms" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RapScale_CtStone_Sizemms">
+              <PropertyRef Name="RapScale_CtStone_SizemmId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="RapScale_CtStone_Sizemm" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Shapes">
+          <End Role="Shapes" Type="Self.Shapes" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shapes">
+              <PropertyRef Name="ShapeId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Shape" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MiYaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clarities" EntityType="Self.Clarities" />
+          <EntitySet Name="Classifications" EntityType="Self.Classifications" />
+          <EntitySet Name="Colors" EntityType="Self.Colors" />
+          <EntitySet Name="Companies" EntityType="Self.Companies" />
+          <EntitySet Name="Countries" EntityType="Self.Countries" />
+          <EntitySet Name="Cuts" EntityType="Self.Cuts" />
+          <EntitySet Name="Kinds" EntityType="Self.Kinds" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" />
+          <EntitySet Name="Prefixes" EntityType="Self.Prefixes" />
+          <EntitySet Name="RapScale_CtStone_Sizemms" EntityType="Self.RapScale_CtStone_Sizemms" />
+          <EntitySet Name="Shapes" EntityType="Self.Shapes" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <AssociationSet Name="FK_Orders_Clarities" Association="Self.FK_Orders_Clarities">
+            <End Role="Clarities" EntitySet="Clarities" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Companies_Classifications" Association="Self.FK_Companies_Classifications">
+            <End Role="Classifications" EntitySet="Classifications" />
+            <End Role="Companies" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Colors" Association="Self.FK_Orders_Colors">
+            <End Role="Colors" EntitySet="Colors" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Companies_Countries" Association="Self.FK_Companies_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Companies" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Companies_Prefixes" Association="Self.FK_Companies_Prefixes">
+            <End Role="Prefixes" EntitySet="Prefixes" />
+            <End Role="Companies" EntitySet="Companies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Cuts" Association="Self.FK_Orders_Cuts">
+            <End Role="Cuts" EntitySet="Cuts" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Kinds" Association="Self.FK_Orders_Kinds">
+            <End Role="Kinds" EntitySet="Kinds" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_RapScale_CtStone_Sizemms" Association="Self.FK_Orders_RapScale_CtStone_Sizemms">
+            <End Role="RapScale_CtStone_Sizemms" EntitySet="RapScale_CtStone_Sizemms" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Shapes" Association="Self.FK_Orders_Shapes">
+            <End Role="Shapes" EntitySet="Shapes" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Companies" Association="MiYaModel.FK_Orders_Companies">
+            <End Role="Companies" EntitySet="Companies" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="FK_Orders_Companies">
+          <End Type="MiYaModel.Companies" Role="Companies" Multiplicity="0..1" />
+          <End Type="MiYaModel.Orders" Role="Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Companies">
+              <PropertyRef Name="CompanyId" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MiYaModelStoreContainer" CdmEntityContainer="MiYaEntities">
+          <EntitySetMapping Name="Clarities">
+            <EntityTypeMapping TypeName="MiYaModel.Clarities">
+              <MappingFragment StoreEntitySet="Clarities">
+                <ScalarProperty Name="ClarityId" ColumnName="ClarityId" />
+                <ScalarProperty Name="Clarity" ColumnName="Clarity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Classifications">
+            <EntityTypeMapping TypeName="MiYaModel.Classifications">
+              <MappingFragment StoreEntitySet="Classifications">
+                <ScalarProperty Name="ClassificationId" ColumnName="ClassificationId" />
+                <ScalarProperty Name="Classification" ColumnName="Classification" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Colors">
+            <EntityTypeMapping TypeName="MiYaModel.Colors">
+              <MappingFragment StoreEntitySet="Colors">
+                <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="MiYaModel.Companies">
+              <MappingFragment StoreEntitySet="Companies">
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Classification" ColumnName="Classification" />
+                <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+                <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="DateRegistration" ColumnName="DateRegistration" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="IsInterested" ColumnName="IsInterested" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="MiYaModel.Countries">
+              <MappingFragment StoreEntitySet="Countries">
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cuts">
+            <EntityTypeMapping TypeName="MiYaModel.Cuts">
+              <MappingFragment StoreEntitySet="Cuts">
+                <ScalarProperty Name="CutId" ColumnName="CutId" />
+                <ScalarProperty Name="Cut" ColumnName="Cut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kinds">
+            <EntityTypeMapping TypeName="MiYaModel.Kinds">
+              <MappingFragment StoreEntitySet="Kinds">
+                <ScalarProperty Name="KindId" ColumnName="KindId" />
+                <ScalarProperty Name="Kind" ColumnName="Kind" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="MiYaModel.Orders">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="carat" ColumnName="carat" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="Shape" ColumnName="Shape" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Clarity" ColumnName="Clarity" />
+                <ScalarProperty Name="Cut" ColumnName="Cut" />
+                <ScalarProperty Name="Kind" ColumnName="Kind" />
+                <ScalarProperty Name="RapScale_CtStone_Sizemm" ColumnName="RapScale_CtStone_Sizemm" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="TotalCt" ColumnName="TotalCt" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateOrder" ColumnName="DateOrder" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Prefixes">
+            <EntityTypeMapping TypeName="MiYaModel.Prefixes">
+              <MappingFragment StoreEntitySet="Prefixes">
+                <ScalarProperty Name="PrefixId" ColumnName="PrefixId" />
+                <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RapScale_CtStone_Sizemms">
+            <EntityTypeMapping TypeName="MiYaModel.RapScale_CtStone_Sizemms">
+              <MappingFragment StoreEntitySet="RapScale_CtStone_Sizemms">
+                <ScalarProperty Name="RapScale_CtStone_SizemmId" ColumnName="RapScale_CtStone_SizemmId" />
+                <ScalarProperty Name="RapScale_CtStone_Sizemm" ColumnName="RapScale_CtStone_Sizemm" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shapes">
+            <EntityTypeMapping TypeName="MiYaModel.Shapes">
+              <MappingFragment StoreEntitySet="Shapes">
+                <ScalarProperty Name="ShapeId" ColumnName="ShapeId" />
+                <ScalarProperty Name="Shape" ColumnName="Shape" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="MiYaModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

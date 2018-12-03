@@ -1,0 +1,88 @@
+﻿@model MiYa.Models.Orders
+
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalCt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOrder)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Clarities.Clarity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Colors.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cuts.Cut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kinds.Kind)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RapScale_CtStone_Sizemms.RapScale_CtStone_Sizemm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shapes.Shape)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note)
+        </th>
+    </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.TotalCt)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.DateOrder)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(model => model.Clarities.Clarity)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Colors.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Cuts.Cut)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Kinds.Kind)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.RapScale_CtStone_Sizemms.RapScale_CtStone_Sizemm)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Shapes.Shape)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Note)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = model.OrderId }) |
+                @Html.ActionLink("Details", "Details", new { id = model.OrderId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = model.OrderId })*@
+            </td>
+        </tr>
+    
+
+</table>

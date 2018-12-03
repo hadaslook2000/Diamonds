@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Options";
+}
+<h2>@ViewBag.Company</h2>
+
+<input type="hidden" name="data1" value="@ViewBag.Company" />
+<input type="hidden" name="data2" value="@ViewBag.CompanyId" />
+
+<div class="form-horizontal">
+    <div class="btn-group-lg">
+        <div class="form-group">
+            <div class="form-group">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("Index1","Orders")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/007-vote-1.png" />
+                            <h4 class="h41">RFQ</h4>
+                            <div style="align-content:stretch">
+                               Watch all RFQ.
+                            </div>
+                        </div>
+                    </li>
+                    @*<li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("Index","Orders")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/009-agreement.png" />
+                            <h4 class="h41">Approved RFQ</h4>
+                            <div style="align-content:stretch">
+                               The approved RFQ.
+                            </div>
+                        </div>
+                    </li>*@
+                    <li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("Index","Companies")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/014-shopping-list.png" />
+                            <h4 class="h41">All Companies </h4>
+                            <div style="align-content:stretch">
+                                Watch all companies.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("HomePage","Companies")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/018-debate.png" />
+                            <h4 class="h41">Disconnection</h4>
+                            <div style="align-content:stretch">
+                                Disconnect your account.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</div>

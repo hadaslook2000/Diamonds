@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Options";
+}
+@section scripts{
+    <script src="~/Scripts/passData.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+}
+
+
+<h2>@ViewBag.Company</h2>
+
+<input type="hidden" name="data1" value="@ViewBag.Company" />
+<input type="hidden" name="data2" value="@ViewBag.CompanyId" />
+
+
+
+<div class="form-horizontal">
+    <div class="btn-group-lg">
+
+        <div class="form-group">
+            <div class="form-group">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("Edit","Companies", new {idCompany= ViewBag.CompanyId })'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/030-manager.png" />
+                            <h4 class="h41">Update</h4>
+                            <div style="align-content:stretch">
+                                Update your personal details.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="paper-plane"></ion-icon>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("Create","Orders")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/014-shopping-list.png" />
+                            <h4 class="h41">New RFQ</h4>
+                            <div style="align-content:stretch">
+                               Create a new RFQ.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("Index","Orders")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/050-shopping-bag.png" />
+                            <h4 class="h41">Watching</h4>
+                            <div style="align-content:stretch">
+                                Watch your RFQ.
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="actionLinkClass11 card-container11"
+                             onclick="window.location.href='@Url.Action("HomePage","Companies")'"
+                             style="padding-left:10vw; cursor:pointer">
+                            <img class="img-project111" src="~/Images/018-debate.png" />
+                            <h4 class="h41">Disconnection</h4>
+                            <div style="align-content:stretch">
+                                Disconnect your account.
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div id="google_translate_element"></div>
+</div>

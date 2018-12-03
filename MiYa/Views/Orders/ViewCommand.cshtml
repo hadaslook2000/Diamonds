@@ -1,0 +1,110 @@
+﻿@*
+
+    לדאוג שהקראט והטוטל סיטי והקואנטיטי יעבורו ויתמלא בדטה בייס בעת רישום של הצעת מחיר חדשה - כרגע מתאפס אולי כי מעגל מספר כלפי מטה .
+        ז"א למה לא מעביר את הדטה טוטל סיטי = 0 ו- קוואנטיטי = 0 ו- קראט =נל ד
+      למה קומבו בוקס לא נקלט בשינויים?
+
+            לדאוג לשינוי של טוטל סיטי בעריכה של הצעת מחיר בעת שינוי של כמות
+        לדאוג לכתובת \
+
+        לדאוג לסנד וכנסל ולשנות סטטוסים וכו וכו
+
+
+    $(".buttonToKindOfLink")[0]
+    <input class=​"buttonToKindOfLink" type=​"submit" value=​"Send">
+    var l=
+        $(".buttonToKindOfLink")[0]
+    undefined
+    $(".buttonToKindOfLink")[0].closest("tr")
+    <tr>​<td>
+                    30
+                ​</td>​<td>
+                    Aktiv
+                ​</td>​<td>
+                    22/05/18 22:24:37
+                ​</td>​<td>
+                    FL
+                ​</td>​<td>
+                    DEF
+                ​</td>​<td>
+                    Excellent
+                ​</td>​<td>
+                    Rough
+                ​</td>​<td>​…​</td>​<td>
+                    Princess
+                ​</td>​<td class=​"carat">
+
+                ​</td>​<td>​…​</td>​<td class=​"total">
+                    300.00
+                ​</td>​<td>
+
+                ​</td>​<td>​…​</td>​</tr>
+    $(".buttonToKindOfLink")[0].closest("tr").find("td:first").text()
+    VM2775:1 Uncaught TypeError: $(...)[0].closest(...).find is not a function
+        at <anonymous>:1:43
+    (anonymous) @ VM2775:1
+    var a = $(".buttonToKindOfLink")[0].closest("tr");
+    undefined
+    $(a).find("td:first")
+    init [td, prevObject: init(1), context: tr, selector: "td:first"]
+    $(a).find("td:first").text()
+    "
+                    30
+                "
+    $(a).find(".form-control.quant").text()
+    ""
+    $(a).find(".form-control.quant").value()
+    VM5194:1 Uncaught TypeError: $(...).find(...).value is not a function
+        at <anonymous>:1:34
+    (anonymous) @ VM5194:1
+    $(a).find(".form-control.quant")
+    init [input#item_Quantity.form-control.quant.text-box.single-line, prevObject: init(1), context: tr, selector: ".form-control.quant"]0: input#item_Quantity.form-control.quant.text-box.single-linecontext: trlength: 1prevObject: init [tr, context: tr]selector: ".form-control.quant"__proto__: Object(0)
+    $(a).find("td .quant")
+    init [input#item_Quantity.form-control.quant.text-box.single-line, prevObject: init(1), context: tr, selector: "td .quant"]
+    $(a).find("td .quant").text()
+    ""
+    $(a).find("td .quant").value()
+    VM5354:1 Uncaught TypeError: $(...).find(...).value is not a function
+        at <anonymous>:1:24
+    (anonymous) @ VM5354:1
+    var q = $(a).find("td .quant")
+    undefined
+    q.text()
+    ""
+    q.context
+    <tr>​…​</tr>
+    q.text
+    ƒ (a){if(f.isFunction(a))return this.each(function(b){var c=f(this);c.text(a.call(this,b,c.text()))});if(typeof a!="object"&&a!==b)return this.empty().append((this[0]&&this[0].ownerDocument||c).createT…
+    $(".quant")
+    init(12) [input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, input#item_Quantity.form-control.quant.text-box.single-line, prevObject: init(1), context: document, selector: ".quant"]
+    $(".quant:first")
+    init [input#item_Quantity.form-control.quant.text-box.single-line, prevObject: init(1), context: document, selector: ".quant:first"]
+    $(".quant")[0]
+    <input class=​"form-control quant text-box single-line" data-val=​"true" data-val-number=​"The field Quantity must be a number." data-val-required=​"השדה Quantity נדרש." id=​"item_Quantity" name=​"item.Quantity" type=​"text" value=​"3.00">
+    $(".quant")[0].text
+    undefined
+    $(".quant")[0].text()
+    VM9975:1 Uncaught TypeError: $(...)[0].text is not a function
+        at <anonymous>:1:16
+    (anonymous) @ VM9975:1
+    var x =$(".quant")[0]
+    undefined
+    $(x).text
+    ƒ (a){if(f.isFunction(a))return this.each(function(b){var c=f(this);c.text(a.call(this,b,c.text()))});if(typeof a!="object"&&a!==b)return this.empty().append((this[0]&&this[0].ownerDocument||c).createT…
+    $(x).text()
+    ""
+    $(x).val
+    ƒ (a){var c,d,e,g=this[0];{if(!!arguments.length){e=f.isFunction(a);return this.each(function(d){var g=f(this),h;if(this.nodeType===1){e?h=a.call(this,d,g.val()):h=a,h==null?h="":typeof h=="number"?h+=…
+    $(x).val()
+    "3.00"
+    $(".quant:first").val()
+    "3.00"
+    var q = $(a).find(".quant")
+    undefined
+    q
+    init [input#item_Quantity.form-control.quant.text-box.single-line, prevObject: init(1), context: tr, selector: ".quant"]
+    $(q).val()
+    "3.00"
+    browserLink:37 GET http://localhost:8731/0a47e29541324ef6844b6b62d1635473/browserLinkSignalR/reconnect?transport=longPolling&connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAFA5MWjRnBkmVdu0i%2BGBNvQAAAAACAAAAAAAQZgAAAAEAACAAAAAOkb3yaAzU3GRNn7qi09ZyCigV8VuyEaLoUJ5zbAc%2BFgAAAAAOgAAAAAIAACAAAABmn5DBKiWpN0n7bQL02STjHecKGnEyYXBUpQRGX%2Be1ZTAAAACadM6DxBUIgOYAVP455NukWZwQdivejyUFLpXPi6XzFYNXA3%2FTnwc6etSvPzkicZxAAAAAKFSYQU3AX%2FJmgXO%2FPY1kN5kVMuH2OsYHtyYSK%2Fl2Q1qAFaM3%2Bn2LndkdYmoAewMZDJ4fssM4j0PqK2By%2BEQpWg%3D%3D&messageId=d-1935BC0F-B%2C0%7CI%2C4%7CJ%2C0&requestUrl=http%3A%2F%2Flocalhost%3A6866%2FOrders%2FIndex&browserName=Chrome&userAgent=Mozilla%2F5.0+(Windows+NT+6.1%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML%2C+like+Gecko)+Chrome%2F70.0.3538.102+Safari%2F537.36&tid=4&_=1543355008354 net::ERR_NETWORK_IO_SUSPENDED
+    send @ browserLink:37
+    ajax @
